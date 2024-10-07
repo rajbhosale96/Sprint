@@ -1,0 +1,29 @@
+3 5 location_start:93 length:4
+3 start sw1:0 
+location_end:0
+one:1
+len:0
+
+start:2 length one len
+1 location_start len
+location_end 
+
+7 location_start address1
+7 location_start add1
+7 location_end address2
+7 location_end add2
+
+check:5 address1 address2 swap 
+9
+
+swap:7 address1:0 sw1
+     7 address2:0 add1:0
+     7 sw1 add2:0
+
+1 address1 one address1
+2 address2 one address2
+1 add1 one add1
+2 add2 one add2
+3 check
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 2 3 4 
+
