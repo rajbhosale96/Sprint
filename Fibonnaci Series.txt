@@ -1,0 +1,17 @@
+3 5 first_location:199 len:10
+
+3 start no1:0 no2:1 no3:0 one:1
+last_location:0 
+
+start:1 first_location len 
+      last_location
+      7 first_location location
+
+check:5 location last_location
+      add stop:9
+  add:7 no1 location:0
+      1 no1 no2 no3
+      7 no2 no1
+      7 no3 no2
+      1 location one location
+      3 check
