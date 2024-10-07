@@ -1,0 +1,29 @@
+3 5 no:122 res:1
+3 start rev:0 rev_cp:0 temp:0 zero:0
+count:0 check:0 ten:10 one:1 
+start:7 zero rev
+      7 no rev_cp
+
+rev_cp=zero:4 rev_cp zero rev=no
+
+rev_cp<ten:5 rev_cp ten check<rev
+
+2 rev_cp ten rev_cp
+1 count one count
+3 rev_cp<ten 
+
+check<rev:5 check rev temp+
+1 temp rev_cp rev
+7 zero temp 
+7 count rev_cp
+7 zero count
+7 zero check
+3 rev_cp=zero
+
+temp+:1 temp ten temp
+      1 check one check
+3 check<rev
+rev=no:4 rev no incre
+9
+incre:1 res one res
+9
