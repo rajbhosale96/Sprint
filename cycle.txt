@@ -1,0 +1,24 @@
+3 7 seq_first_loc:59 seq_len:1 cyc_first_loc:150 cyc_len:6
+
+3 start seq_last_loc:0 cyc_last_loc:0 one:1
+
+start:7 seq_first_loc seq_loc
+      7 cyc_first_loc cyc_loc
+      1 seq_first_loc seq_len
+      seq_last_loc
+      1 cyc_first_loc cyc_len
+      cyc_last_loc
+
+cyc<end:5 cyc_loc cyc_last_loc loc=end
+9
+loc=end:4 seq_loc seq_last_loc 
+        loc=loc
+        7 seq_loc:0 cyc_loc:0
+        1 cyc_loc one cyc_loc
+        1 seq_loc one seq_loc
+        3 cyc<end
+loc=loc:7 seq_first_loc seq_loc
+3 cyc<end
+0 0 0 0 0 
+
+1 2 3
