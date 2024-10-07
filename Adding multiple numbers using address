@@ -1,0 +1,14 @@
+3 start first_location:33 len:5 
+last_location:0 one:1 
+
+start:1 first_location len
+        last_location
+      7 first_location no
+      0 0 100
+check:5 no last_location add
+9
+add:1 no:0 100 100
+    1 no one no
+3 check
+
+0 1 2 3 5 6
