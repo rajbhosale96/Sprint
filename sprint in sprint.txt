@@ -1,0 +1,126 @@
+3 START user_program
+zero:0 one:1 two:2 three:3 four:4 five:5 six:6 seven:7 nine:9 ten:10
+instru:0
+comp:0
+
+START:0 end end
+      1 end one pointer
+     
+
+CHECK:7 pointer:0 instru
+      4 instru zero PUT
+      4 instru one ADD
+      4 instru two SUB
+      4 instru three JUMP
+      4 instru four CHECK_EQUAL
+      4 instru five CHECK_LESS
+      4 instru six USER_INPUT
+      4 instru seven COPY
+      4 instru nine STOP
+      4 instru ten MUL
+     
+
+JUMP:1 pointer one track1
+     1 end track1:0 pointer
+     3 CHECK
+
+ADD:1 pointer one track2
+    1 track2:0 end no1
+    1 pointer one pointer
+    1 pointer one track3
+    1 track3:0 end no2
+    1 pointer one pointer
+    1 pointer one track4
+    1 track4:0 end no3
+    1 pointer one pointer
+    1 no1:0 no2:0 no3:0
+    1 pointer one pointer
+    3 CHECK
+     
+SUB:1 pointer one track5
+    1 track5:0 end no4
+    1 pointer one pointer
+    1 pointer one track6
+    1 track6:0 end no5
+    1 pointer one pointer
+    1 pointer one track7
+    1 track7:0 end no6
+    1 pointer one pointer
+    2 no4:0 no5:0 no6:0
+    1 pointer one pointer
+    3 CHECK
+
+PUT:1 pointer one track8
+    1 pointer one pointer
+    1 pointer one track9
+    1 end track9:0 track10
+    1 pointer one pointer
+    7 track8:8 track10:0
+    1 pointer one pointer
+    3 CHECK
+
+COPY:1 pointer one track11
+     1 track11:0 end value1
+     1 pointer one pointer
+     1 pointer one track12
+     1 track12:0 end value2
+     1 pointer one pointer
+     7 value1:0 value2:0
+     1 pointer one pointer
+     3 CHECK
+   
+CHECK_EQUAL:1 pointer one track13
+     1 track13:0 end value3
+     1 pointer one pointer
+     1 pointer one track14
+     1 track14:0 end value4
+     1 pointer one pointer
+     4 value3:0 value4:0 EQUAL
+     1 pointer two pointer
+     3 CHECK
+     EQUAL:1 pointer one tracker1
+           1 tracker1:0 end num1
+           0 num1:0 pointer
+     3 CHECK
+
+CHECK_LESS:1 pointer one track15
+     1 track15:0 end value5
+     1 pointer one pointer
+     1 pointer one track16
+     1 track16:0 end value6
+     1 pointer one pointer
+     5 value5:0 value6:0 LESS
+     1 pointer two pointer
+     3 CHECK
+     LESS:1 pointer one tracker2
+          1 tracker2:0 end num2
+          0 num2:0 pointer
+     3 CHECK
+
+USER_INPUT:1 pointer one track17
+           1 track17:0 end value7
+           6 value7:0
+           1 pointer two pointer
+           3 CHECK
+
+MUL:1 pointer one track18
+    1 track18:0 end value8
+    1 pointer one pointer
+    1 pointer one track19
+    1 track19:0 end value9
+    1 pointer one pointer
+    1 pointer one track20
+    7 track20 track21
+    1 track20:0 end value10
+    1 track21:0 end value11
+    again:5 comp value8:0 mul
+    1 pointer two pointer
+    3 CHECK
+    mul:1 value10:0 value9:0 value11:0
+    1 comp one comp
+    3 again
+
+STOP:9
+
+end:0
+user_program:10 2 3 6 9 0
